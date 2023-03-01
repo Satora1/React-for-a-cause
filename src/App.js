@@ -1,7 +1,8 @@
 
-import Form from './components/Form';
+
 
 import './App.css';
+import Form from './components/Form';
 import { useState } from "react";
 import Contact from './components/Contact';
 import PureModal from 'react-pure-modal';
@@ -9,7 +10,6 @@ import 'react-pure-modal/dist/react-pure-modal.min.css';
 import Welcome from './components/Welcome';
 import AboutUs from './components/AboutUs';
 import HowToHelp from './components/HowToHelp';
-
 
 
 
@@ -91,6 +91,7 @@ function App() {
       {aboutUsIsShown && <AboutUs></AboutUs>}
       {helpIsShown && <HowToHelp></HowToHelp>}
 
+
     </div>
 
 
@@ -99,3 +100,4 @@ function App() {
 
 
 export default App;
+
