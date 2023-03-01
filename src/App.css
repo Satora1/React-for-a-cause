@@ -26,7 +26,7 @@ src: url('/src/components/Fonts/AmaticSC-Regular.ttf');
   text-align: center;
 }
 
-.description {
+.childrenDes>description {
   font-family: Andika;
   font-size: 15px
 }
@@ -58,6 +58,195 @@ src: url('/src/components/Fonts/AmaticSC-Regular.ttf');
   text-align: center;
 }
 
+body {
+  background: url("photos/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.welcome {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Andika';
+}
+
+.nav {
+  background-color: #abd9ffbd;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav>button {
+  background-color: #FFEBAD;
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+  width: 150px;
+  font-size: 17px;
+}
+
+.nav>button:hover {
+  background-color: #f1da94;
+}
+
+.content {
+  height: 300px;
+  display: flex;
+  justify-content: right;
+  color: #333536;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #abd9ff9f;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.about-us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.about-us-card {
+  background-color: #abd9ffb8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: 200px;
+}
+
+.contact {
+  color: black;
+}
+
+.sheath {
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-window {
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: fixed;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: bold;
+}
+ 
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+
+.holiday{
+  font-size: 20px;
+  width: 350px;
+  height: 600px;
+  background-color:#ABD9FF;
+  color: white;
+  padding:5px;
+  position:absolute;
+  left:60%;
+  bottom:20%;
+}
+
+.holidayButton{
+  background-color: #FFF6BF;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top:30px;
+  border-radius: 15px;
+}
+
+.kidsPic{
+  height: 210px;
+  width: 340px;
+}
+
+.education{
+  font-size: 20px;
+  width: 350px;
+  height: 600px;
+  background-color:#ABD9FF;
+  color: white;
+  padding:5px;
+  position:absolute;
+  left:20%;
+  bottom:20%;
+}
+
+.chooseLength{
+  left:20px;
+  background-color: #FFF6BF;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top:10px;
+  border-radius: 15px;
+  }
+
 button.childButton {
   background-color: #FFF6BF;
   border: none;
@@ -70,5 +259,56 @@ button.childButton {
   cursor: pointer;
   margin-top:30px;
   border-radius: 15px;
+}
+
+.educationButton{
+  background-color: #FFF6BF;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top:80%;
+  border-radius: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: -10px;
+  border: 1px solid #ccc;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left:40px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio-group label {
+  font-weight: bold;
+}
+
+.about-us-card .description{
+  justify-content: left;
+  font-size: 13px;
+  padding: 10px;
 }
 
