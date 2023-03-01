@@ -1,51 +1,24 @@
 import './App.css';
 import { useState } from "react";
-import Contact from './components/contact';
+import Contact from './components/Contact';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
-
 import Welcome from './components/Welcome';
 import AboutUs from './components/AboutUs';
-
 import HowToHelp from './components/HowToHelp';
 
-import { useState } from 'react';
-import Contact from './components/Contact';
 
 
 
 function App() {
 
-  const [modal, setModal] = useState(false);
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={() => setModal(true)}>Contact</button>
-        <PureModal
-          className='modal-window'
-          width='730px'
-          header="Contact Us"
-          isOpen={modal}
-          closeButton="close"
-          closeButtonPosition="bottom"
-          onClose={() => {
-            setModal(false);
-            return true;
-          }}
-        >
-          <div className='contact'>{<Contact/>}</div>
-        </PureModal>
-      </header>
-
-  const title = "Future belongs to us!"
   const shortDesc = "You have the power, you have the influence - help us make the future brighter"
+  const title = "Future belongs to us!"
+  const [modal, setModal] = useState(false);
   const [aboutUsIsShown, SetAboutUsVisibility] = useState(false);
   const [contactIsShown, SetContactVisibility] = useState(false);
   const [homeIsShown, SetHomeVisibility] = useState(true);
   const [helpIsShown, SetHelpVisibility] = useState(false);
-
 
   function handleClickOnAboutUs() {
     if (aboutUsIsShown) {
@@ -70,6 +43,7 @@ function App() {
       SetHomeVisibility(false)
       SetAboutUsVisibility(false)
       SetHelpVisibility(false)
+      setModal(true)
     }
   }
 
@@ -93,9 +67,23 @@ function App() {
         <button onClick={handleClickOnHelp} >How to help?</button>
         <button onClick={handleClickOnContact} >Contact</button>
       </div>
+      <PureModal
+          className='modal-window'
+          width='730px'
+          header="Contact Us"
+          isOpen={modal}
+          closeButton="close"
+          closeButtonPosition="bottom"
+          onClose={() => {
+            setModal(false);
+            SetHomeVisibility(true)
+            return true;
+          }}
+        >
+          <div className='contact'>{contactIsShown && <Contact></Contact>}</div>
+        </PureModal>
       {homeIsShown && <Welcome title={title} shortDesc={shortDesc} />}
       {aboutUsIsShown && <AboutUs></AboutUs>}
-      {contactIsShown && <Contact></Contact>}
       {helpIsShown && <HowToHelp></HowToHelp>}
     </div>
 
