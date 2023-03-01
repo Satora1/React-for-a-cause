@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from "react";
+import Contact from './components/contact';
+import PureModal from 'react-pure-modal';
+import 'react-pure-modal/dist/react-pure-modal.min.css';
 
 function App() {
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button onClick={() => setModal(true)}>Contact</button>
+        <PureModal
+          className='modal-window'
+          width='730px'
+          header="Contact Us"
+          isOpen={modal}
+          closeButton="close"
+          closeButtonPosition="bottom"
+          onClose={() => {
+            setModal(false);
+            return true;
+          }}
         >
-          Learn React
-        </a>
+          <div className='contact'>{<Contact/>}</div>
+        </PureModal>
       </header>
     </div>
+
+
   );
 }
 
