@@ -1,17 +1,29 @@
 import {useState} from 'react';
 
 function Contact() {
-    const [getMessage, setGetMessage] = useState("");
-    const [messageStatus, setMessageStatus] = useState("")
+    const [messageStatus, setMessageStatus] = useState("");
+    const [contactForm, setContactForm] = useState({
+        title: "",
+        email: "", 
+        message: "",
+        firstName: "",
+        lastName: ""
+    });
+    function assignInputValueToMessage(input) {
+        contactForm[input.name] = input.value;
+        setContactForm(contactForm);
+    }
     const sendMessage = () => {
-        const titleInput = document.querySelector("#title").value;
-        const messageInput = document.querySelector("#message").value;
-        if (messageInput.length > 10) {
-            setGetMessage(`${titleInput} ${messageInput}`);
+        if (contactForm.message.length > 10) {
             setMessageStatus("Message sent!");
-            document.querySelector("#title").value = "";
-            document.querySelector("#message").value = "";
-            console.log(getMessage);
+            console.log(contactForm);
+            setContactForm({
+                title: "",
+                email: "", 
+                message: "",
+                firstName: "",
+                lastName: ""
+            })
         } else {
             setMessageStatus("Your message must contain at least 10 characters!")
         }
@@ -19,11 +31,11 @@ function Contact() {
 
     let content =
         <p className="contact_text">
-            First name: <input></input><br></br>
-            Last name: <input></input><br></br>
-            Email: <input></input><br></br>
-            Title: <input id="title"></input><br></br>
-            Message: <input id="message"></input><br></br>
+            First name: <input name="firstName" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
+            Last name: <input name="lastName" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
+            Email: <input name="email" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
+            Title: <input name="title"onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
+            Message: <input name="message" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
             <button onClick={sendMessage}>Send message</button><br></br>
             {messageStatus}
         </p>

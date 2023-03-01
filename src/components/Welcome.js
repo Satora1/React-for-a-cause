@@ -4,11 +4,11 @@ function Welcome(props) {
 
   let content =
     <div className="welcome">
-      <div class="content">
+      <div className="content">
         <h1>{title}</h1>
         <h3>We believe that education is the key to unlocking a child's full potential and creating opportunities for a successful future.</h3>
       </div>
-      <div class="footer">
+      <div className="footer">
         <h3>{shortDesc}</h3>
       </div>
     </div>
