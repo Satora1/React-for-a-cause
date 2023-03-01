@@ -1,3 +1,6 @@
+
+import Form from './component/Form';
+
 import './App.css';
 import { useState } from "react";
 import Contact from './components/Contact';
@@ -61,6 +64,7 @@ function App() {
   }
 
   return (
+
     <div className="app">
       <div className="nav">
         <button onClick={handleClickOnAboutUs}>About us</button>
@@ -85,6 +89,7 @@ function App() {
       {homeIsShown && <Welcome title={title} shortDesc={shortDesc} />}
       {aboutUsIsShown && <AboutUs></AboutUs>}
       {helpIsShown && <HowToHelp></HowToHelp>}
+
     </div>
 
 
