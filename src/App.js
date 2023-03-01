@@ -1,5 +1,5 @@
 
-import Form from './component/Form';
+import Form from './components/Form';
 
 import './App.css';
 import { useState } from "react";
@@ -71,6 +71,7 @@ function App() {
         <button onClick={handleClickOnHelp} >How to help?</button>
         <button onClick={handleClickOnContact} >Contact</button>
       </div>
+      <Form/>
       <PureModal
           className='modal-window'
           width='730px'
