@@ -1,8 +1,6 @@
 
 import './App.css';
-import Holiday from'./component/Holiday'
-import Education from'./component/Education'
-import Form from './component/Form';
+import Form from './components/Form';
 import { useState } from "react";
 import Contact from './components/Contact';
 import PureModal from 'react-pure-modal';
@@ -16,10 +14,6 @@ import HowToHelp from './components/HowToHelp';
 
 function App() {
 
-  return (
-    <div className="App">
-     <Holiday/>
-     <Education/>
   const shortDesc = "You have the power, you have the influence - help us make the future brighter"
   const title = "Future belongs to us!"
   const [modal, setModal] = useState(false);
