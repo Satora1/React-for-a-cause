@@ -1,3 +1,63 @@
+@font-face {
+font-family: Amatic SC;
+src: url('/src/components/Fonts/AmaticSC-Regular.ttf');
+}
+
+@font-face {
+  font-family: Andika;
+  src: url('/src/components/Fonts/Andika-Regular.ttf');
+  }
+
+.App {
+  text-align: center;
+}
+
+.childrenDes{
+  font-family: Amatic SC ;
+  font-size: 40px;
+  width: 350px;
+  height: 600px;
+  background-color:#ABD9FF;
+  color: white;
+  padding:5px;
+  position:absolute;
+  left:60%;
+  bottom:20%;
+  text-align: center;
+}
+
+.childrenDes>description {
+  font-family: Andika;
+  font-size: 15px
+}
+
+.childrenButton{
+  background-color: #FFF6BF;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top:30px;
+  border-radius: 15px;
+}
+
+.child{
+  font-family: Amatic SC ;
+  font-size: 30px;
+  width: 250px;
+  height: 450px;
+  background-color:#ABD9FF;
+  color: white;
+  padding:5px;
+  left:60%;
+  bottom:20%;
+  text-align: center;
+}
+
 body {
   background: url("photos/background.jpg");
   background-repeat: no-repeat;
@@ -23,7 +83,6 @@ body {
   justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
-
 }
 
 .nav>button {
@@ -57,6 +116,7 @@ body {
   justify-content: center;
   margin-top: auto;
 }
+
 .about-us{
   display: flex;
   align-items: center;
@@ -75,6 +135,7 @@ body {
   width: 90%;
   height: 200px;
 }
+
 .contact {
   color: black;
 }
@@ -184,6 +245,20 @@ h1 {
   cursor: pointer;
   margin-top:10px;
   border-radius: 15px;
+  }
+
+button.childButton {
+  background-color: #FFF6BF;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top:30px;
+  border-radius: 15px;
 }
 
 .educationButton{
@@ -230,7 +305,6 @@ input[type="email"] {
 .radio-group label {
   font-weight: bold;
 }
-
 
 .about-us-card .description{
   justify-content: left;

@@ -1,4 +1,5 @@
-
+import Children from './components/Children';
+import ChildrenCard from './components/ChildrenCard';
 import './App.css';
 import Form from './components/Form';
 import { useState } from "react";
@@ -8,7 +9,6 @@ import 'react-pure-modal/dist/react-pure-modal.min.css';
 import Welcome from './components/Welcome';
 import AboutUs from './components/AboutUs';
 import HowToHelp from './components/HowToHelp';
-
 
 
 
@@ -89,6 +89,7 @@ function App() {
       {aboutUsIsShown && <AboutUs></AboutUs>}
       {helpIsShown && <HowToHelp></HowToHelp>}
 
+
     </div>
 
 
@@ -97,3 +98,4 @@ function App() {
 
 
 export default App;
+
