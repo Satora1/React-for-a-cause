@@ -1,6 +1,6 @@
 import './App.css';
-import Children from './Children';
-import ChildrenCard from './ChildrenCard';
+import Children from './components/Children';
+import ChildrenCard from './components/ChildrenCard';
 
 
 function App() {
