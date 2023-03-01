@@ -1,17 +1,13 @@
-
-
-
 import './App.css';
-import Form from './components/Form';
+import "./components/ChildrenHolEduc.css";
 import { useState } from "react";
-import Contact from './components/Contact';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
+import Contact from './components/Contact';
 import Welcome from './components/Welcome';
 import AboutUs from './components/AboutUs';
 import HowToHelp from './components/HowToHelp';
-
-
+import Form from './components/Form';
 
 function App() {
 
@@ -71,33 +67,28 @@ function App() {
         <button onClick={handleClickOnHelp} >How to help?</button>
         <button onClick={handleClickOnContact} >Contact</button>
       </div>
-      <Form/>
+      <Form />
       <PureModal
-          className='modal-window'
-          width='730px'
-          header="Contact Us"
-          isOpen={modal}
-          closeButton="close"
-          closeButtonPosition="bottom"
-          onClose={() => {
-            setModal(false);
-            SetHomeVisibility(true)
-            return true;
-          }}
-        >
-          <div className='contact'>{contactIsShown && <Contact></Contact>}</div>
-        </PureModal>
+        className='modal-window'
+        width='730px'
+        header="Contact Us"
+        isOpen={modal}
+        closeButton="close"
+        closeButtonPosition="bottom"
+        onClose={() => {
+          setModal(false);
+          SetHomeVisibility(true)
+          return true;
+        }}
+      >
+        <div className='contact'>{contactIsShown && <Contact></Contact>}</div>
+      </PureModal>
       {homeIsShown && <Welcome title={title} shortDesc={shortDesc} />}
       {aboutUsIsShown && <AboutUs></AboutUs>}
       {helpIsShown && <HowToHelp></HowToHelp>}
-
-
     </div>
-
-
   );
 }
-
 
 export default App;
 

@@ -1,17 +1,18 @@
 import Holiday from'./Holiday'
 import Education from'./Education'
+import Children from './Children';
 
 function HowToHelp(props) {
-
+    
     let content =
-    <div>
-      <h1 className="help">HOW TO HELP</h1>
-      <Holiday/>
+    <div className="donationCards">
       <Education/>
-      </div>
+      <Children/>
+      <Holiday/>
+    </div>
   
     return content;
   
   }
   
-  export default HowToHelp;
+  export default HowToHelp
