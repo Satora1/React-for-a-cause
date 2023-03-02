@@ -47,6 +47,9 @@ body {
   height: 50px;
   width: 200px;
   font-size: 1.4vw;
+  font-family: Andika;
+  text-align: center;
+  cursor: pointer;
 }
 
 button:hover {
@@ -212,12 +215,6 @@ input[type="email"] {
 
 .radio-group label {
   font-weight: bold;
-}
-
-.menu, .about-button, .help-button, .contact-button{
-  font-family: Andika;
-  text-align: center;
-  cursor: pointer;
 }
 
 .future {
