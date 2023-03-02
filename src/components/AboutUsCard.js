@@ -7,7 +7,7 @@ function AboutUsCard(props) {
         <div class="about-us-card">
             <h2 class="title">{title} </h2>
             <div class="description">{desc}</div>
-            <img src={image}></img>
+            <img src={image} alt=""></img>
         </div>
     return content;
 }

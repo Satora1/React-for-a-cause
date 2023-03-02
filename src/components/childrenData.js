@@ -18,7 +18,7 @@ const children = [
         image: "https://images.pexels.com/photos/632125/pexels-photo-632125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         name: "Maria",
         age: 10,
-        description: "I like arts and crafts. I think I'm a creative person, and like doing things with my hands"
+        description: "I like arts and crafts. I think I'm a creative person, and like creating unique things with my own hand. I especially like to make decorative paper items."
     },
     {
         id: 4,
@@ -36,10 +36,10 @@ const children = [
     },
     {
         id: 6,
-        image:"https://st.depositphotos.com/1817276/1417/i/600/depositphotos_14178479-stock-photo-smiling-boy-outdoors-portrait.jpg",
+        image:"https://images.pexels.com/photos/1620616/pexels-photo-1620616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         name: "Mark",
         age: 6,
-        description: "My hobby is collecting car toys from the movie cars."
+        description: "My hobby is collecting car toys from the movie cars. My favorite car is the Lightning McQueen. It’s a racing car. One day I want to drive a fast racing car."
     }
 ]
 
