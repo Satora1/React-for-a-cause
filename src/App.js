@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import Welcome from './components/Welcome';
 import AboutUs from './components/AboutUs';
 import HowToHelp from './components/HowToHelp';
-import Form from './components/Form';
 import ChildrenCard from "./components/ChildrenCard";
 
 function App() {
