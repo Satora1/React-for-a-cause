@@ -30,8 +30,8 @@ body {
 
 .nav {
   background-color: #abd9ffbd;
-  height: 50px;
-  width: 98vw;
+  height: 80px;
+  width: 100vw;
   border-radius: 20px;
   margin: 10px 10px 17%;
   display: flex;
@@ -109,10 +109,13 @@ body {
 }
 
 .about-us-card .description {
-  font-size: 1.2vw;
-  padding: 10px;
+  font-size: 1.7vw;
   margin: 50px -235px 0;
   font-family: Andika;
+  display: contents;
+  justify-content: left;
+  font-size: 17px;
+  padding: 10px;
 }
 
 .contact {
@@ -120,8 +123,11 @@ body {
 }
 
 .sheath {
+  font-family: Amatic SC;
+  font-size: 30px;
   width: 400px;
   height: auto;
+  color: black;
   padding: 20px;
   background-color: #f5f5f5;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -130,6 +136,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
 }
 
 input {
@@ -145,7 +155,7 @@ input {
   text-align: center;
 }
 
-.chooseLength {
+.choose-length {
   left: 20px;
   background-color: #FFF6BF;
   border: none;
@@ -160,7 +170,7 @@ input {
   border-radius: 15px;
 }
 
-.button2 {
+.button-2 {
   background-color: #FFF6BF;
   border: none;
   color: black;
@@ -210,36 +220,22 @@ input[type="email"] {
   padding: 10px;
 }
 
-.AboutButton {
-  font-family: Andika;
-  text-align: center;
-  cursor: pointer;
-
-}
-
-.HelpButton {
-  font-family: Andika;
-  text-align: center;
-  cursor: pointer;
-
-}
-
-.ContactButton {
+.menu, .about-button, .help-button, .contact-button{
   font-family: Andika;
   text-align: center;
   cursor: pointer;
 }
 
-.Future {
+.future {
   font-family: Amatic SC;
   text-align: center;
   font-size: 100px;
-  margin-bottom: 20%;
+  margin-bottom: 30%;
   margin-left: 50%;
   margin-top: -8%;
 }
 
-.WhatAboutUs {
+.what-about-us {
   font-family: Andika;
   text-align: center;
   font-size: 30px;
@@ -247,8 +243,13 @@ input[type="email"] {
   margin-top: -18%;
 }
 
-.shortDesc {
+.short-desc {
   font-family: Andika;
   text-align: center;
+  font-size: 30px;
+}
+
+.panel.panel-default {
+  font-family: Amatic SC;
   font-size: 30px;
 }

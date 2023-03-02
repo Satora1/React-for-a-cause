@@ -50,9 +50,9 @@ function Contact() {
     }
 
     let content =
-        <p className="contact_text">
-            First name: <input name="firstName" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
-            Last name: <input name="lastName" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
+        <p className="contact-text">
+            First name: <input name="first-name" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
+            Last name: <input name="last-name" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
             Email: <input name="email" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
             Title: <input name="title" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>
             Message: <input name="message" onChange={e => assignInputValueToMessage(e.target)}></input><br></br>

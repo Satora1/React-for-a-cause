@@ -57,13 +57,13 @@ function App() {
 
         <div className="app">
             <div className="nav">
-                <button onClick={handleClickOnMenu} >Menu</button>
-                <button className='AboutButton' onClick={handleClickOnAboutUs}>About us</button>
-                <button className='HelpButton' onClick={handleClickOnHelp}>How to help?</button>
-                <button className='ContactButton' onClick={handleClickOnContact}>Contact</button>
+                <button className= "menu" onClick={handleClickOnMenu} >Menu</button>
+                <button className= "about-button" onClick={handleClickOnAboutUs}>About us</button>
+                <button className= "help-button" onClick={handleClickOnHelp}>How to help?</button>
+                <button className= "contact-button" onClick={handleClickOnContact}>Contact</button>
             </div>
             <PureModal
-                className='modal-window'
+                className="modal-window"
                 width='730px'
                 header="Contact Us"
                 isOpen={visibility.modal}
@@ -72,7 +72,7 @@ function App() {
                     return true;
                 }}
             >
-                <div className='contact'>{visibility.contact && <Contact />}</div>
+                <div className="contact">{visibility.contact && <Contact />}</div>
             </PureModal>
             {visibility.home && <Welcome title={title} shortDesc={shortDesc} />}
             {visibility.aboutUs && <AboutUs />}
