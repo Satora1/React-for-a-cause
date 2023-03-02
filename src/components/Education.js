@@ -1,17 +1,8 @@
-import { useState } from 'react';
+import Formula from './Form';
 
 function Education() {
 
-    function handleClick() {
-        if (buttonText === "Donate") {
-            setButtonText('Go back');
-        } else {
-            setButtonText("Donate")
-        }
-    }
-
-    const initialState = "Donate";
-    const [buttonText, setButtonText] = useState(initialState);
+ 
     let content =
         <div className="education" >
             <h1>Education</h1>
@@ -20,8 +11,9 @@ function Education() {
                 <option>3 Months</option>
                 <option>12 Months</option>
             </select>
+
             <h2>Make a donation for chosen months of education</h2>
-            <button className='educationButton' onClick={() => handleClick()}>{buttonText}</button>
+            <Formula/>
         </div>;
 
     return content;

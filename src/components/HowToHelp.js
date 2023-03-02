@@ -1,5 +1,6 @@
 import Holiday from'./Holiday'
 import Education from'./Education'
+import Form from './Form';
 
 function HowToHelp(props) {
 
