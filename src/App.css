@@ -222,12 +222,15 @@ input[type="email"] {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
+=======
 /* .menu, .about-button, .help-button, .contact-button{
   font-family: Andika;
   text-align: center;
   cursor: pointer;
 } */
 
+>>>>>>> 9e4329e96e4468de896119a6762c6e8b40d11d15
 .future {
   font-family: Amatic SC;
   text-align: center;
