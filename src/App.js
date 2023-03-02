@@ -62,8 +62,7 @@ function App() {
                 <button onClick={handleClickOnAboutUs}>About us</button>
                 <button onClick={handleClickOnHelp}>How to help?</button>
                 <button onClick={handleClickOnContact}>Contact</button>
-            </div>
-            <Form/>
+            </div>        
             <PureModal
                 className='modal-window'
                 width='730px'
