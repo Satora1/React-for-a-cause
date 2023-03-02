@@ -18,14 +18,14 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<h1>Contributors</h1><br> https://github.com/ignacyD https://github.com/UllaMos https://github.com/Agataa02 https://github.com/Satora1 https://github.com/LeonBochenek
+<h1>Future belongs to us</h1>
 
 <!-- PROJECT LOGO -->
-<br />
+
 <div align="center">
 
 <h3 align="center">Future belongs to us</h3>
-
+    <br> https://github.com/ignacyD https://github.com/UllaMos https://github.com/Agataa02 https://github.com/Satora1 https://github.com/LeonBochenek
 </div>
 
 
