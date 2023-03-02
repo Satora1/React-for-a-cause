@@ -8,17 +8,22 @@
   src: url('/src/components/Fonts/Andika-Regular.ttf');
 }
 
-.App {
+/* .App {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-}
+} */
 
 body {
   background: url("photos/background.jpg")no-repeat center/cover;
   height: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .welcome {
@@ -47,6 +52,9 @@ body {
   height: 50px;
   width: 200px;
   font-size: 1.4vw;
+  font-family: Andika;
+  text-align: center;
+  cursor: pointer;
 }
 
 button:hover {
@@ -138,7 +146,7 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 
-h1 {
+.sheath>h1 {
   text-align: center;
 }
 
@@ -214,11 +222,11 @@ input[type="email"] {
   font-weight: bold;
 }
 
-.menu, .about-button, .help-button, .contact-button{
+/* .menu, .about-button, .help-button, .contact-button{
   font-family: Andika;
   text-align: center;
   cursor: pointer;
-}
+} */
 
 .future {
   font-family: Amatic SC;
