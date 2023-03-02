@@ -22,13 +22,15 @@
 
 <!-- PROJECT LOGO -->
 
-
-<div>
 ## Contributors
+<li>
     https://github.com/ignacyD https://github.com/UllaMos https://github.com/Agataa02 https://github.com/Satora1 https://github.com/LeonBochenek
+</li>
+
+## Mentors 
+<div>
+    mentors
 </div>
-
-
 
 
 <!-- ABOUT THE PROJECT -->
