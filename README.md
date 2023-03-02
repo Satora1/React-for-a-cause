@@ -24,7 +24,7 @@
 
 <div align="center">
 
-<h3 align="center">Future belongs to us</h3>
+## Contributors
     <br> https://github.com/ignacyD https://github.com/UllaMos https://github.com/Agataa02 https://github.com/Satora1 https://github.com/LeonBochenek
 </div>
 
