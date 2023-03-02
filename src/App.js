@@ -43,7 +43,6 @@ function App() {
         }
     }
 
-
     function handleClickOnHelp() {
         if (visibility.help) {
             setVisibility({...nothing, home: true})
@@ -67,8 +66,6 @@ function App() {
                 width='730px'
                 header="Contact Us"
                 isOpen={visibility.modal}
-                closeButton="close"
-                closeButtonPosition="bottom"
                 onClose={() => {
                     setVisibility({...nothing, modal: false, home: true})
                     return true;
