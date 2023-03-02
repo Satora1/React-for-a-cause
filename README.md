@@ -23,20 +23,20 @@
 <!-- PROJECT LOGO -->
 
 ## Contributors
-<li>
-    <ul><a href="https://github.com/UllaMos">Urszula Moskalik</ul> 
-    <ul>https://github.com/Agataa02</ul> 
-    <ul>https://github.com/Satora1</ul>  
-    <ul>https://github.com/LeonBochenek</ul>  
-    <ul>https://github.com/ignacyD</ul>   
-</li>
+<ul>
+    <li><a href="https://github.com/UllaMos">Urszula Moskalik</li> 
+    <li><a href="https://github.com/Agataa02">Agata Gruszka</li> 
+    <li><a href="https://github.com/Satora1">Jakub Satora</li>  
+    <li><a href="https://github.com/LeonBochenek">Leon Bochenek</li>  
+    <li><a href="https://github.com/ignacyD">Ignacy Gąsiorowski</li>   
+</ul>
 
 ## Mentors 
-<div>
-    <a>Katarzyna Mrawczyńska</ul> 
-    <ul>Łukasz Dutka</ul> 
-    <ul>Adrian Widłak</ul> 
-</div>
+<ul>
+    <li>Katarzyna Mrawczyńska</li> 
+    <li>Łukasz Dutka</li> 
+    <li>Adrian Widłak</li> 
+</ul>
 
 
 <!-- ABOUT THE PROJECT -->
