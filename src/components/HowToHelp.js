@@ -9,7 +9,7 @@ function HowToHelp({ handleClickOnChildren }) {
     const picOfHoliday = "https://montemlife.com/wp-content/uploads/2019/03/summercamp-1000x600.jpg"
     const picOfEducation = "https://i.gremicdn.pl/image/free/af5c10cffea0aa04f6e7d5a4366850e0/?t=resize:fill:408:255,enlarge:1"
 
-    return <div className="donationCards">
+    return <div className="donation-cards">
         <HelpCard classNameOfEle="education" title="Education" descrip={descriptionOfEducationCard} src={picOfEducation}></HelpCard>
         <Children handleClickOnChildren={handleClickOnChildren} />
         <HelpCard classNameOfEle="holiday" title="Holidays" descrip={descriptionOfHolidayCard} src={picOfHoliday}></HelpCard>

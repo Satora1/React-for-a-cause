@@ -1,12 +1,12 @@
-.donationCards {
+.donation-cards {
     display: flex;
-    height: 50vh;
-    width: 90vw;
+    height: 60vh;
+    width: 100vw;
     justify-content: space-evenly;
     flex-direction: row;
 }
 
-.holiday, .education, .childrenDes {
+.holiday, .education, .children-des {
     background-color: #ABD9FF;
     width: 350px;
     height: 600px;
@@ -32,7 +32,7 @@
     margin-right: 25px;
 }
 
-.educationButton, .childrenButton, .holidayButton, .childButton {
+.education-button, .children-button, .holiday-button, .child-button {
     background-color: #FFF6BF;
     border: none;
     color: black;
@@ -44,10 +44,10 @@
     border-radius: 20px;
 }
 
-.childCard {
+.child-card {
     display: flex;
     gap: 10px;
-    position: fixed;
+    justify-content: space-around;
 }
 
 .child {
@@ -71,7 +71,7 @@
    height: 150px;
 }
 
-button.childButton {
+button.child-button {
     padding: 6px 31px;
     font-size: 15px;
     margin-top: 30px;
