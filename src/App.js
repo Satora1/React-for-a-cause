@@ -44,6 +44,7 @@ function App() {
         }
     }
 
+
     function handleClickOnHelp() {
         if (visibility.help) {
             setVisibility({...nothing, home: true})
