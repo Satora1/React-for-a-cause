@@ -22,10 +22,10 @@
 
 <!-- PROJECT LOGO -->
 
-<div align="center">
 
+<div>
 ## Contributors
-    <br> https://github.com/ignacyD https://github.com/UllaMos https://github.com/Agataa02 https://github.com/Satora1 https://github.com/LeonBochenek
+    https://github.com/ignacyD https://github.com/UllaMos https://github.com/Agataa02 https://github.com/Satora1 https://github.com/LeonBochenek
 </div>
 
 
@@ -85,8 +85,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 Project Link: [https://github.com/CodecoolGlobal/react-for-a-cause-react-ignacyD](https://github.com/CodecoolGlobal/react-for-a-cause-react-ignacyD)
 
