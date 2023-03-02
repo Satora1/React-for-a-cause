@@ -24,12 +24,18 @@
 
 ## Contributors
 <li>
-    <ul>https://github.com/ignacyD</ul> https://github.com/UllaMos https://github.com/Agataa02 https://github.com/Satora1 https://github.com/LeonBochenek
+    <ul><a href="https://github.com/UllaMos">Urszula Moskalik</ul> 
+    <ul>https://github.com/Agataa02</ul> 
+    <ul>https://github.com/Satora1</ul>  
+    <ul>https://github.com/LeonBochenek</ul>  
+    <ul>https://github.com/ignacyD</ul>   
 </li>
 
 ## Mentors 
 <div>
-    mentors
+    <a>Katarzyna Mrawczyńska</ul> 
+    <ul>Łukasz Dutka</ul> 
+    <ul>Adrian Widłak</ul> 
 </div>
 
 
@@ -38,7 +44,13 @@
 
 ![](src/photos/product-screenshot.jpg)
 
-Project description test
+The project involved creating a website for a foundation that helps children in need.
+
+The first step in the project was to talk about general conception. Based on these discussions, a plan was developed for the website design, content, and functionality.
+
+The design phase of the project involved creating a mockup of the website's layout and visual elements. We wanted a bright, cheerful design that would appeal to children and families, while still conveying a sense of professionalism and trustworthiness. Once that was done, the website's content was developed.
+
+Overall, we made a professional, user-friendly website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,6 +82,10 @@ Update node package manager with this command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Used Technologies
+
+    We were coding in Javascript, HTML and CSS and using Git with GitHub as version control system.
+
 ### Built With
 
 * [![React][React.js]][React-url]
@@ -79,9 +95,8 @@ Update node package manager with this command:
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-wrzucic screena donacji itd.
-_For more examples, please refer to the [Documentation](https://example.com)_
+![](src/photos/how-to-help.png)
+![](src/photos/kids.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
