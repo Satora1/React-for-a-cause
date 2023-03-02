@@ -41,11 +41,11 @@ function App() {
       SetHomeVisibility(true)
     }
     else {
+      setModal(true)
       SetContactVisibility(true)
       SetHomeVisibility(false)
       SetAboutUsVisibility(false)
       SetHelpVisibility(false)
-      setModal(true)
     }
   }
 
@@ -71,20 +71,19 @@ function App() {
         <button onClick={handleClickOnContact} >Contact</button>
       </div>
       <PureModal
-          className='modal-window'
-          width='730px'
-          header="Contact Us"
-          isOpen={modal}
-          closeButton="close"
-          closeButtonPosition="bottom"
-          onClose={() => {
-            setModal(false);
-            SetHomeVisibility(true)
-            return true;
-          }}
-        >
-          <div className='contact'>{contactIsShown && <Contact></Contact>}</div>
-        </PureModal>
+        className='modal-window'
+        width='40%'
+        header="Contact Us"
+        isOpen={modal}
+        onClose={() => {
+          setModal(false);
+          SetHomeVisibility(true);
+          SetContactVisibility(false);
+          return true;
+        }}
+      >
+        <div className='contact'>{contactIsShown && <Contact></Contact>}</div>
+      </PureModal>
       {homeIsShown && <Welcome title={title} shortDesc={shortDesc} />}
       {aboutUsIsShown && <AboutUs></AboutUs>}
       {helpIsShown && <HowToHelp></HowToHelp>}
