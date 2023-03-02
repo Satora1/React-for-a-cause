@@ -12,7 +12,6 @@ function Children({handleClickOnChildren}) {
                 support the development of one of them
             </div>
             <button className="childrenButton" onClick={handleClickOnChildren}>Support a child</button>
-            {/*{visibility.eachChild && <ChildrenCard/>}*/}
         </div>
     )
 }
