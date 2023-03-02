@@ -4,13 +4,14 @@
     width: 100vw;
     justify-content: space-evenly;
     flex-direction: row;
+    margin-top: -110px;
 }
 
 .holiday, .education, .children-des {
     background-color: #ABD9FF;
     width: 350px;
     height: 600px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 5px;
     text-align: center;
     display: flex;
@@ -46,18 +47,22 @@
 
 .child-card {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:-200px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .child {
     display: flex;
     font-family: Amatic SC;
     font-size: 30px;
-    width: 250px;
-    height: 450px;
+    width: 350px;
+    height: 500px;
     background-color: #ABD9FF;
-    color: white;
+    color: rgb(7, 6, 6);
     padding: 5px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,7 +73,7 @@
 
 .child>.description {
    font-size: 17px;
-   height: 150px;
+   height: 100px;
 }
 
 button.child-button {

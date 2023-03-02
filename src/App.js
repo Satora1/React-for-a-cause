@@ -54,7 +54,6 @@ function App() {
     const handleClickOnChildren = () => setVisibility({ ...nothing, children: !visibility.children });
 
     return (
-
         <div className="app">
             <div className="nav">
                 <button className= "menu" onClick={handleClickOnMenu} >Menu</button>
