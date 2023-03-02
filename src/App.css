@@ -24,7 +24,7 @@ body {
 }
 
 .welcome {
-  min-height: 90vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   font-family: 'Andika';
@@ -33,7 +33,7 @@ body {
 .nav {
     background-color: #abd9ffbd;
     height: 50px;
-    width: 90vw;
+    width: 98vw;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 17%;
@@ -74,7 +74,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 10%;
 }
 
 .about-us{
@@ -197,6 +197,45 @@ input[type="email"] {
   justify-content: left;
   font-size: 13px;
   padding: 10px;
+}
+
+.AboutButton{
+  font-family: Andika ;
+  text-align: center;
+  cursor: pointer;
+
+}
+.HelpButton{
+  font-family: Andika ;
+  text-align: center;
+  cursor: pointer;
+
+}
+.ContactButton{
+  font-family: Andika ;
+  text-align: center;
+  cursor: pointer;
+}
+.Future{
+  font-family: Amatic SC ;
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 20%;
+  margin-left: 50%;
+  margin-top: -8%;
+}
+
+.WhatAboutUs{
+  font-family: Andika;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 50%;
+  margin-top: -18%;
+}
+.shortDesc{
+  font-family: Andika;
+  text-align: center;
+  font-size: 30px;
 }
 
 

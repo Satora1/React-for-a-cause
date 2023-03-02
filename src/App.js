@@ -1,6 +1,6 @@
 import './App.css';
 import "./components/ChildrenHolEduc.css";
-import {useState} from "react";
+import { useState } from "react";
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 import Contact from './components/Contact';
@@ -29,54 +29,54 @@ function App() {
 
     function handleClickOnAboutUs() {
         if (visibility.aboutUs) {
-            setVisibility({...nothing, home: true})
+            setVisibility({ ...nothing, home: true })
         } else {
-            setVisibility({...nothing, aboutUs: true})
+            setVisibility({ ...nothing, aboutUs: true })
         }
     }
 
     function handleClickOnContact() {
         if (visibility.contact) {
-            setVisibility({...nothing, home: true})
+            setVisibility({ ...nothing, home: true })
         } else {
-            setVisibility({...nothing, contact: true, modal: true})
+            setVisibility({ ...nothing, contact: true, modal: true })
         }
     }
 
     function handleClickOnHelp() {
         if (visibility.help) {
-            setVisibility({...nothing, home: true})
+            setVisibility({ ...nothing, home: true })
         } else {
-            setVisibility({...nothing, help: true})
+            setVisibility({ ...nothing, help: true })
         }
     }
 
-    const handleClickOnChildren = () => setVisibility({...nothing, children: !visibility.children});
+    const handleClickOnChildren = () => setVisibility({ ...nothing, children: !visibility.children });
 
     return (
 
         <div className="app">
             <div className="nav">
-                <button onClick={handleClickOnAboutUs}>About us</button>
-                <button onClick={handleClickOnHelp}>How to help?</button>
-                <button onClick={handleClickOnContact}>Contact</button>
-            </div>        
+                <button className='AboutButton' onClick={handleClickOnAboutUs}>About us</button>
+                <button className='HelpButton' onClick={handleClickOnHelp}>How to help?</button>
+                <button className='ContactButton' onClick={handleClickOnContact}>Contact</button>
+            </div>
             <PureModal
                 className='modal-window'
                 width='730px'
                 header="Contact Us"
                 isOpen={visibility.modal}
                 onClose={() => {
-                    setVisibility({...nothing, modal: false, home: true})
+                    setVisibility({ ...nothing, modal: false, home: true })
                     return true;
                 }}
             >
-                <div className='contact'>{visibility.contact && <Contact/>}</div>
+                <div className='contact'>{visibility.contact && <Contact />}</div>
             </PureModal>
-            {visibility.home && <Welcome title={title} shortDesc={shortDesc}/>}
-            {visibility.aboutUs && <AboutUs/>}
-            {visibility.help && <HowToHelp handleClickOnChildren={handleClickOnChildren}/>}
-            {visibility.children && <ChildrenCard/>}
+            {visibility.home && <Welcome title={title} shortDesc={shortDesc} />}
+            {visibility.aboutUs && <AboutUs />}
+            {visibility.help && <HowToHelp handleClickOnChildren={handleClickOnChildren} />}
+            {visibility.children && <ChildrenCard />}
         </div>
     );
 }
