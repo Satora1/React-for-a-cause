@@ -1,0 +1,78 @@
+.donationCards {
+    display: flex;
+    height: 50vh;
+    width: 90vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.holiday, .education, .childrenDes {
+    background-color: #ABD9FF;
+    width: 350px;
+    height: 600px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title{
+    font-family: Amatic SC;
+    font-size: 50px;
+}
+
+.description{
+    font-family: Andica;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.educationButton, .childrenButton, .holidayButton, .childButton {
+    background-color: #FFF6BF;
+    border: none;
+    color: black;
+    font-family: Andica;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.childCard {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+}
+
+.child {
+    display: flex;
+    font-family: Amatic SC;
+    font-size: 30px;
+    width: 250px;
+    height: 450px;
+    background-color: #ABD9FF;
+    color: white;
+    padding: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.child>.description {
+   font-size: 17px;
+   height: 150px;
+}
+
+button.childButton {
+    padding: 6px 31px;
+    font-size: 15px;
+    margin-top: 30px;
+}

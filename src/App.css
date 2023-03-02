@@ -10,52 +10,10 @@ src: url('/src/components/Fonts/AmaticSC-Regular.ttf');
 
 .App {
   text-align: center;
-}
-
-.childrenDes{
-  font-family: Amatic SC ;
-  font-size: 40px;
-  width: 350px;
-  height: 600px;
-  background-color:#ABD9FF;
-  color: white;
-  padding:5px;
-  position:absolute;
-  left:60%;
-  bottom:20%;
-  text-align: center;
-}
-
-.childrenDes>description {
-  font-family: Andika;
-  font-size: 15px
-}
-
-.childrenButton{
-  background-color: #FFF6BF;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top:30px;
-  border-radius: 15px;
-}
-
-.child{
-  font-family: Amatic SC ;
-  font-size: 30px;
-  width: 250px;
-  height: 450px;
-  background-color:#ABD9FF;
-  color: white;
-  padding:5px;
-  left:60%;
-  bottom:20%;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 body {
@@ -73,16 +31,18 @@ body {
 }
 
 .nav {
-  background-color: #abd9ffbd;
-  height: 50px;
-  border-radius: 20px;
-  margin-top: 10px;
-  display: flex;
-  gap: 200px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
+    background-color: #abd9ffbd;
+    height: 50px;
+    width: 90vw;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 17%;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .nav>button {
@@ -176,62 +136,6 @@ input {
   font-weight: bold;
 }
  
-
-h1 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-  text-align: center; 
-}
-
-
-.holiday{
-  font-size: 20px;
-  width: 350px;
-  height: 600px;
-  background-color:#ABD9FF;
-  color: white;
-  padding:5px;
-  position:absolute;
-  left:60%;
-  bottom:20%;
-}
-
-.holidayButton{
-  background-color: #FFF6BF;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top:30px;
-  border-radius: 15px;
-}
-
-.kidsPic{
-  height: 210px;
-  width: 340px;
-}
-
-.education{
-  font-size: 20px;
-  width: 350px;
-  height: 600px;
-  background-color:#ABD9FF;
-  color: white;
-  padding:5px;
-  position:absolute;
-  left:20%;
-  bottom:20%;
-}
-
 .chooseLength{
   left:20px;
   background-color: #FFF6BF;
@@ -247,33 +151,7 @@ h1 {
   border-radius: 15px;
   }
 
-button.childButton {
-  background-color: #FFF6BF;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top:30px;
-  border-radius: 15px;
-}
 
-.educationButton{
-  background-color: #FFF6BF;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top:80%;
-  border-radius: 15px;
-}
 
 label {
   display: block;
@@ -312,3 +190,7 @@ input[type="email"] {
   padding: 10px;
 }
 
+.form-group {
+  margin-bottom: 20px;
+  text-align: center; 
+}

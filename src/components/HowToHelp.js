@@ -1,17 +1,15 @@
-import Holiday from'./Holiday'
-import Education from'./Education'
+import Holiday from './Holiday'
+import Education from './Education'
+import Children from './Children';
 
-function HowToHelp(props) {
+function HowToHelp({handleClickOnChildren}) {
 
-    let content =
-    <div>
-      <h1 className="help">HOW TO HELP</h1>
-      <Holiday/>
-      <Education/>
-      </div>
-  
-    return content;
+    return <div className="donationCards">
+        <Education/>
+        <Children handleClickOnChildren={handleClickOnChildren}/>
+        <Holiday/>
+    </div>;
   
   }
   
-  export default HowToHelp;
+  export default HowToHelp
