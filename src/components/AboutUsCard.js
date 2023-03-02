@@ -4,10 +4,10 @@ function AboutUsCard(props) {
     const image = props.image;
 
     let content =
-        <div class="about-us-card">
-            <h2 class="title">{title} </h2>
-            <div class="description">{desc}</div>
-            <img src={image} alt=""></img>
+        <div className="about-us-card">
+            <h2 className="title">{title} </h2>
+            <div className="description">{desc}</div>
+            <img className = "image" src={image} width="300"></img>
         </div>
     return content;
 }

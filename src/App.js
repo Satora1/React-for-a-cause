@@ -28,26 +28,26 @@ function App() {
     })
 
     function handleClickOnAboutUs() {
-        if (visibility.aboutUs) {
-            setVisibility({ ...nothing, home: true })
-        } else {
+        if (!visibility.aboutUs) {
             setVisibility({ ...nothing, aboutUs: true })
         }
     }
 
     function handleClickOnContact() {
-        if (visibility.contact) {
-            setVisibility({ ...nothing, home: true })
-        } else {
+        if (!visibility.contact) {
             setVisibility({ ...nothing, contact: true, modal: true })
         }
     }
 
     function handleClickOnHelp() {
-        if (visibility.help) {
-            setVisibility({ ...nothing, home: true })
-        } else {
+        if (!visibility.help) {
             setVisibility({ ...nothing, help: true })
+        }
+    }
+
+    function handleClickOnMenu() {
+        if (!visibility.home) {
+            setVisibility({ ...nothing, home: true })
         }
     }
 
@@ -57,6 +57,7 @@ function App() {
 
         <div className="app">
             <div className="nav">
+                <button onClick={handleClickOnMenu} >Menu</button>
                 <button className='AboutButton' onClick={handleClickOnAboutUs}>About us</button>
                 <button className='HelpButton' onClick={handleClickOnHelp}>How to help?</button>
                 <button className='ContactButton' onClick={handleClickOnContact}>Contact</button>
