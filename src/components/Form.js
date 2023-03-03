@@ -52,7 +52,6 @@ function Formula() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
   };
 
   useEffect(() => {
