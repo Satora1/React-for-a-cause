@@ -8,7 +8,7 @@ function HelpCard(props) {
     let content =
         <div className={className} >
             <div className="title">{title}</div>
-            <img className="kids-pic" src={imageSrc} width="350" alt=""/>
+            <img className="kids-pic" src={imageSrc} width="350"/>
             <div className="description">{descrip}</div>
             <Formula/>
         </div>;

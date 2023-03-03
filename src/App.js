@@ -1,4 +1,5 @@
 import './App.css';
+import "./components/ChildrenHolEduc.css";
 import { useState } from "react";
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';

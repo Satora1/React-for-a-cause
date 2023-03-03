@@ -1,11 +1,11 @@
 @font-face {
   font-family: Amatic SC;
-  src: url('/src/components/Fonts/AmaticSC-Regular.ttf');
+  src: url('/src/Fonts/AmaticSC-Regular.ttf');
 }
 
 @font-face {
   font-family: Andika;
-  src: url('/src/components/Fonts/Andika-Regular.ttf');
+  src: url('/src/Fonts/Andika-Regular.ttf');
 }
 
 
